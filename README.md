@@ -4,8 +4,8 @@ URL du site : http://votre-url-ici.com
 
 ### Groupe
 
-- Prénom & Nom
-- Prénom & Nom
+- Petter YAZBECK
+- Anouk PAKEEREE
 
 ## Prologue
 
