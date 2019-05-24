@@ -90,10 +90,40 @@ export default {
       }
       // COUNTER
       if(action.category === 'wasteTime') {
-        localStorage.setItem('time', -5)
-        this.actualTime= localStorage.setItem('time, -5');
+        localStorage.setItem('time', 4)
+        this.actualTime= localStorage.setItem('time', -5)
+        gameService.time += 4;
+        gameService.actualTime -= 5;
+      }
+      if(action.category === 'wasteMoreTime') {
+        localStorage.setItem('time', 5)
+        this.actualTime= localStorage.setItem('time', -5)
         gameService.time += 5;
         gameService.actualTime -= 5;
+      }
+      if(action.category === 'gainTime') {
+        localStorage.setItem('time', -4)
+        this.actualTime= localStorage.setItem('time', -5)
+        gameService.time += -4;
+        gameService.actualTime -= -4;
+      }
+      if(action.category === 'gainMoreTime') {
+        localStorage.setItem('time', -5)
+        this.actualTime= localStorage.setItem('time', -5)
+        gameService.time += -5;
+        gameService.actualTime -= -5;
+      }
+      if(action.category === 'wasteLotTime') {
+        localStorage.setItem('time', 10)
+        this.actualTime= localStorage.setItem('time', 10)
+        gameService.time += 10;
+        gameService.actualTime -= -10;
+      }
+      if(action.category === 'time') {
+        localStorage.setItem('time', 2)
+        this.actualTime= localStorage.setItem('time', 2)
+        gameService.time += 2;
+        gameService.actualTime -= -2;
       }
       if (gameService.actualTime >= gameService.maxTime) {
         this.$router.push({path: '/lose'})

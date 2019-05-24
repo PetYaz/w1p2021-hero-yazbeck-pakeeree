@@ -598,13 +598,13 @@
       "content": "Choisis le plat que tu veux livrer",
       "characters": [
         {
-          "class": "Parisien",
-          "accessory": "phone",
+          "class": "Soupe",
+          "spillable": "yes",
           "path": "/game/1"
         },
         {
-          "class": "Backpacker",
-          "accessory": "map",
+          "class": "Burger",
+          "spillable": "false",
           "path": "/game/1"
         }
       ]

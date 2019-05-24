@@ -1,6 +1,6 @@
 class GameService {
     constructor() {
-      this.actualTime = 0;
+      this.actualTime = localStorage.getItem('time');
       this.maxTime = 20;
       this.time = 0; 
       this.endContent = `GAME OVER, tu t'es pissé dessus`;
