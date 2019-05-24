@@ -7,7 +7,7 @@
           {
             "label": "la rue pavée",
             "category": "gainTime",
-            "spill": true,
+            "asset": "spill",
             "path": 2
           },
           {
@@ -134,7 +134,7 @@
             "label": "Je tente de passer entre les bouchons",
             "path": 15,
             "category": "gainTime",
-            "spill":true
+            "asset":"spill"
           },
           {
             "label": "Je continue sur la route",
@@ -167,7 +167,7 @@
             "label": "Je prends la voie pavée",
             "path": 19,
             "category":"gainTime",
-            "spill": true 
+            "asset": "spill" 
             
           },
           {
@@ -185,7 +185,7 @@
             "label": "Bouchon: Je passe entre les voitures",
             "path": 21,
             "category":"gainTime",
-            "spill": true
+            "asset": "spill"
           },
           {
               "label": "Je laisse passer la poussette",
@@ -222,7 +222,7 @@
           {
             "label": "Je passe entre les voitures pour éviter les bouchons",
             "category": "gainTime",
-            "spill": true,
+            "asset": "spill",
             "path": 26
           }
         ]
@@ -329,11 +329,11 @@
         "actions": [
           {
             "label": "Je laisse passer la poussette",
-            "category":"win"
+            "category":"win/lose"
           },
           {
             "label": "Je prends la voie de tram",
-            "category":"win"
+            "category":"win/lose"
           }
         ]
       },
@@ -343,11 +343,11 @@
         "actions": [
           {
             "label": "Je continue sur la route",
-            "category":"win"
+            "category":"win/lose"
           },
           {
               "label": "Je prends la voie de bus",
-              "category":"win"
+              "category":"win/lose"
           }
         ]
       },
@@ -357,7 +357,7 @@
         "actions": [
           {
             "label": "Je passe entre les bouchons",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "je prends la voie de bus",
@@ -371,7 +371,7 @@
                 "time": -2 
               }
             ],
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -381,11 +381,11 @@
         "actions": [
           {
             "label": "J'attends au feu rouge",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "Je prends la voie de tram",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -395,11 +395,11 @@
         "actions": [
           {
             "label": "J'attends au feu rouge",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "je prends la voie de tram",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -409,11 +409,11 @@
         "actions": [
           {
             "label": "Je monte sur le trottoir",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "je continue sur la route",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -423,11 +423,11 @@
         "actions": [
           {
             "label": "Je laisse passer la grand-mère",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "Je monte sur le trottoir",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -441,7 +441,7 @@
           },
           {
             "label": "Je continue sur la route",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -455,7 +455,7 @@
           },
           {
             "label": "Je laisse passer la grand-mère",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -469,7 +469,7 @@
           },
           {
             "label": "J'attends que le feu passe au vert",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -479,7 +479,7 @@
         "actions": [
           {
             "label": "Je laisse passer la poussette",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "je prends la ruelle",
@@ -493,7 +493,7 @@
         "actions": [
           {
             "label": "Je laisse passer la poussette",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "je prends la voie de bus",
@@ -507,7 +507,7 @@
                 "time": -2 
               }
             ],
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -521,7 +521,7 @@
           },
           {
             "label": "Je prends la route",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -531,11 +531,11 @@
         "actions": [
           {
             "label": "Je passe entre les bouchons",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "J'attends que le feu passe au vert",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -545,7 +545,7 @@
         "actions": [
           {
             "label": "J'attends derrière le camion poubelle",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "Je prends la ruelle",
@@ -559,11 +559,11 @@
         "actions": [
           {
             "label": "Je laisse passer la grand mère",
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "Je prends la voie de tram",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       },
@@ -583,11 +583,11 @@
                 "time": -2 
               }
             ],
-            "category": "win"
+            "category": "win/lose"
           },
           {
             "label": "Je passe entre les voitures dans les bouchons",
-            "category": "win"
+            "category": "win/lose"
           }
         ]
       }
@@ -595,18 +595,22 @@
 
     ],
     "charactersPage": {
-      "content": "Choisis le plat que tu veux livrer",
+      "content": "Choisis la commande que tu veux livrer",
       "characters": [
         {
-          "class": "Soupe",
-          "spillable": "yes",
+          "label": "La soupe au choux",
+          "class": "soupe",
+          "asset": "spill",
+          "svg": "#soupe",
           "path": "/game/1"
         },
         {
-          "class": "Burger",
-          "spillable": "false",
+          "label": "Le burger au tofu",
+          "class": "burger",
+          "asset": "nospill",
+          "svg": "#backpacker",
           "path": "/game/1"
         }
       ]
-    } 
+    }
   }

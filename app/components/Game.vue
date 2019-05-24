@@ -59,8 +59,8 @@ export default {
       if ((action.label === 'Taxi' || action.label === 'Uber') && localStorage.getItem('asset') === 'newspaper') {
         this.$router.push({path: '/game/16'})
       }
-      if (action.asset === "newspaper") {
-        localStorage.setItem('asset', 'newspaper')
+      if (action.asset === "spill") {
+        localStorage.setItem('asset', 'spill')
         console.log(localStorage)
       }
       // if (localStorage.getItem('character') === 'backpacker') {
@@ -69,11 +69,11 @@ export default {
       console.log(this.character)
       // FIN déterminée par phone || newspaper 
       if (action.category === 'win/lose') {
-        if (localStorage.getItem('asset') === 'phone') {
+        if (localStorage.getItem('asset') === 'spill') {
           this.$router.push({path: '/lose'})
         }
-        if (localStorage.getItem('asset') === 'newspaper') {
-          this.$router.push({path: '/enigme'})
+        if (localStorage.getItem('asset') === '') {
+          this.$router.push({path: '/win'})
         }
       }
       // Écrans de fin Win || Lose
