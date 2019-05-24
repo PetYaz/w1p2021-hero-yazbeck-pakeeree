@@ -2,7 +2,7 @@
   <div class="big-header">
     <h1>Page</h1>
     <br />
-    <router-link class="button" to="/">Go to Home</router-link>
+    <router-link class="button" to="/Character">Go to Game</router-link>
   </div>
 </template>
 

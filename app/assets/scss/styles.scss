@@ -24,6 +24,19 @@ textarea {
   color: white;
 }
 
+.game-header {
+  background-color: red;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+}
+
 .button {
   color: $hetic-green;
   text-decoration: none;
@@ -32,4 +45,24 @@ textarea {
   border-radius: 5px;
   display: inline-block;
   border: none;
+}
+
+
+.black-leave-active {
+  animation: toBlack 2s;
+}
+
+.black-enter-active {
+  animation : toBlack 2s ease 2s reverse;
+}
+
+@keyframes toBlack {
+  to {
+    opacity : 0;
+  }
+}
+
+
+body {
+  background-color: black;
 }
