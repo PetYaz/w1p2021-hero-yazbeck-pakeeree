@@ -7,6 +7,10 @@ URL du site : https://hero-pakeeree-yazbeck.netlify.com/
 - Anouk Pakeeree
 - Petter Yazbeck
 
+### Schéma 
+
+https://github.com/PetYaz/w1p2021-hero-yazbeck-pakeeree/blob/master/app/assets/rendu/sch%C3%A9ma.pdf
+
 ### Grille d'auto-évaluation
 
 | Type  | Objectif | Fait ? | 
