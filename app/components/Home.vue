@@ -1,14 +1,20 @@
 <template>
   <div class="big-header">
-    <audio ref="audio" autoplay> 
-      <source src="">
-    </audio>
-    <h1>{{ message }}</h1>
-    <br />
-    <router-link class="button" to="/Characters">Go to Characters</router-link>
-    <router-link class="button" to="/Game/1">Go to Game</router-link>
+    <router-link class="buttonHome" to="/Rules">PLAY</router-link>
+    <video class="homeVideo" autoplay loop>
+    <source src="../assets/video/startScreen.mp4"
+            type="video/mp4">
+</video>
   </div>
 </template>
+<style>
+.buttonHome {
+  position: absolute;
+  top: 50;
+  left: 50;
+  z-index: 1;
+}
+</style>
 
 <script>
 export default {
