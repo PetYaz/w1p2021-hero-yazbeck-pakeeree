@@ -608,7 +608,7 @@
           "label": "Le burger au tofu",
           "class": "burger",
           "asset": "nospill",
-          "svg": "#backpacker",
+          "svg": "#burger",
           "path": "/game/1"
         }
       ]

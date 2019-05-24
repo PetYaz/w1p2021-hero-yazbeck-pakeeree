@@ -1,13 +1,13 @@
 <template>
-  <div class="big-header">
+  <div class="fondCharacters">
     <div>
-      <h1>{{ gameChar.content }}</h1>
-      <ul>
-        <li  :key="character.class" v-for="character in gameChar.characters">
+ 
+      <ul class="charactersList">
+        <li class="charactersItem" :key="character.class" v-for="character in gameChar.characters">
           <div>
             <svg v-on:click="doEffects(character)"  aria-hidden="true"><use v-bind:href="`${character.svg}`"></use></svg>
           </div>
-          <div  v-on:click="doEffects(character)">
+          <div class="characterLabel"  v-on:click="doEffects(character)">
             {{ character.label }}
           </div>
         </li>
@@ -15,6 +15,41 @@
     </div>
   </div>
 </template>
+
+<style lang="scss">
+ .fondCharacters {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/pagechoix/fondChoix.png');
+    background-size: cover;
+ }
+.charactersList {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.characterLabel {
+  position: absolute;
+  top: 300%;
+  font-size: 2.2rem;
+  justify-content: center;
+  padding-left: 60px;
+  cursor: pointer;
+}
+.charctersItem {
+    margin-right: 100px;
+    margin-left: 100px;
+
+
+}
+
+
+ 
+</style>
 
 <script>
 import game from "../data.json";

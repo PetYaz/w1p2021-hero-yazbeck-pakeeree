@@ -1,19 +1,94 @@
 <template>
-  <div class="big-header">
-    <h1>{{ step.content }}</h1>
+  <div class="gameHeader">
+    <h1 class="gameTitle">{{ step.content }}</h1>
     <br>
 
-    <h2>{{gameService.time}}</h2>
-    <ul>
-      <li class="choice" v-on:click="doActions(action)" v-for="action in step.actions" :key="action.path">
+    <h2 class="gameTime">Temps de course :<br>{{gameService.time}} mins</h2>
+    <ul class="choiceList">
+      <li class="choiceItem" v-on:click="doActions(action)" v-for="action in step.actions" :key="action.path">
         <br>
-        <div>
+        <div class="labelAction">
           {{ action.label }}
         </div>
       </li>
     </ul>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+.gameHeader {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/pagejeux/gameBackground.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.gameTitle {
+  padding-top: 200px;  
+  font-size: 40px;
+  color: white;
+  width: 60vw;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.gameTime {
+  position: absolute; 
+  top: 5%;
+  left: 2%;
+  font-size: 35px;
+  color: white;
+}
+.choiceList {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.choiceLabel {
+  position: absolute;
+  margin-left: 50px;
+  font-size: 2.2rem;
+  justify-content: center;
+  padding-left: 60px;
+  cursor: pointer;
+}
+
+.choiceItem {
+  margin-right: 100px;
+  margin-left: 100px;
+    color: #E028DC;
+    background-color: black;
+    width: 400px;
+    height: 100px;
+    border: 2px solid;
+    border-color: #E028DC;
+    justify-content: center;
+    text-align: center;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+li {
+  animation: fadeIn 0.5s linear;
+  
+}
+
+
+.labelAction {
+  margin-top: 20px;
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor:pointer;
+}
+</style>
 
 
 <script>
