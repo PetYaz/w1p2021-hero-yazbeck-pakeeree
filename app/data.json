@@ -602,13 +602,15 @@
           "class": "soupe",
           "asset": "spill",
           "svg": "#soupe",
-          "path": "/game/1"
+          "path": "/game/1",
+          "image": "../assets/soupe.svg"
         },
         {
           "label": "Le burger au tofu",
           "class": "burger",
           "asset": "nospill",
           "svg": "#burger",
+          "image": "../assets/burger.svg",
           "path": "/game/1"
         }
       ]

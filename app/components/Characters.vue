@@ -8,7 +8,10 @@
             </div>
             <div class="characterLabel"  v-on:click="doEffects(character)">
             {{ character.label }}
+            <img :src="character.image" alt="">
             </div>
+
+            
         </li>
         </ul>
     </div>
@@ -22,6 +25,11 @@
     background-image: url('../assets/pagechoix/fondChoix.png');
     background-size: cover;
  }
+ img {
+     width: 20vw;
+     height: 50vh;
+ }
+ 
 .charactersList {
   display: flex;
   justify-content: center;
