@@ -1,11 +1,33 @@
 
 <template>
-  <div class="big-header">
+  <div class="lose">
       <div class="btnRestartContainer">
-        <div class="btnRestart" v-on:click="switchToChar()" >Recommencer</div>
+        <div class="restart" v-on:click="switchToChar()" ></div>
       </div>
   </div>
 </template>
+
+<style>
+    .lose {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/tram.jpg');
+    background-size: cover;
+    }
+
+    .restart {
+    position: absolute;
+  bottom: 2%;
+  right: 5%;
+  width: 176px;
+  height: 74px;
+  background-image: url('../assets/replay.svg');
+  background-size: contain center no-repeat;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor:pointer;
+    }
+</style>
 
 <script>
 import gameService from '../services/gameService';

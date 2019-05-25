@@ -1,19 +1,18 @@
 <template>
-  <div class="fondCharacters">
+    <div class="fondCharacters">
     <div>
- 
-      <ul class="charactersList">
+        <ul class="charactersList">
         <li class="charactersItem" :key="character.class" v-for="character in gameChar.characters">
-          <div>
+            <div>
             <svg v-on:click="doEffects(character)"  aria-hidden="true"><use v-bind:href="`${character.svg}`"></use></svg>
-          </div>
-          <div class="characterLabel"  v-on:click="doEffects(character)">
+            </div>
+            <div class="characterLabel"  v-on:click="doEffects(character)">
             {{ character.label }}
-          </div>
+            </div>
         </li>
-      </ul>
+        </ul>
     </div>
-  </div>
+    </div>
 </template>
 
 <style lang="scss">
@@ -43,9 +42,9 @@
 .charctersItem {
     margin-right: 100px;
     margin-left: 100px;
-
-
 }
+
+
 
 
  

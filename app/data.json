@@ -28,7 +28,7 @@
             },
             {
                 "label": "je passe par la ruelle",
-                "category": "lose"
+                "category": "stabbed"
             }
         ]
       },
@@ -75,7 +75,7 @@
           },
           {
             "label": "Je prends la ruelle",
-            "category":"lose"
+            "category":"stabbed"
           }
         ]
       },
@@ -117,7 +117,7 @@
         "actions": [
           {
             "label": "je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           },
           {
             "label": "j'attends que le camion poubelle passe",
@@ -318,7 +318,7 @@
           },
           {
               "label": "Je prends la ruelle",
-              "category":"lose"
+              "category":"stabbed"
           }
 
         ]
@@ -437,7 +437,7 @@
         "actions": [
           {
             "label": "Je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           },
           {
             "label": "Je continue sur la route",
@@ -451,7 +451,7 @@
         "actions": [
           {
             "label": "Je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           },
           {
             "label": "Je laisse passer la grand-mère",
@@ -465,7 +465,7 @@
         "actions": [
           {
             "label": "Je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           },
           {
             "label": "J'attends que le feu passe au vert",
@@ -483,7 +483,7 @@
           },
           {
             "label": "je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           }
         ]
       },
@@ -517,7 +517,7 @@
         "actions": [
           {
             "label": "Je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           },
           {
             "label": "Je prends la route",
@@ -549,7 +549,7 @@
           },
           {
             "label": "Je prends la ruelle",
-            "category": "lose"
+            "category": "stabbed"
           }
         ]
       },

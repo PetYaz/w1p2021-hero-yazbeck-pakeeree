@@ -12,6 +12,14 @@
         </div>
       </li>
     </ul>
+        <div class="soundContainer">
+        <audio rel="preload" autoplay controls="controls" loop >
+            <source src="../assets/audiogame.mp3">
+        </audio>
+        <div>
+ 
+</div>
+    </div>
   </div>
 </template>
 
@@ -28,7 +36,7 @@
 .gameTitle {
   padding-top: 200px;  
   font-size: 40px;
-  color: white;
+  color: #36E0C3;
   width: 60vw;
   margin: 0 auto; 
   text-align: center;
@@ -39,7 +47,7 @@
   top: 5%;
   left: 2%;
   font-size: 35px;
-  color: white;
+  color:#36E0C3;
 }
 .choiceList {
   display: flex;
@@ -80,6 +88,10 @@ li {
   
 }
 
+.play {
+  background-image: url('../assets/on.svg')
+}
+
 
 .labelAction {
   margin-top: 20px;
@@ -88,6 +100,22 @@ li {
   padding-right: 10px;
   cursor:pointer;
 }
+.soundContainer {
+  width: 200px; 
+  position: absolute; 
+  right: 40px; 
+  top: 40px; 
+  background-color: black;
+  z-index: 2;
+  background-image: url('../assets/on.svg')
+
+}
+
+audio {
+  width: 100%; 
+  cursor: pointer;
+  align-self: center; 
+}  
 </style>
 
 
@@ -145,7 +173,7 @@ export default {
       // FIN déterminée par phone || newspaper 
       if (action.category === 'win/lose') {
         if (localStorage.getItem('asset') === 'spill') {
-          this.$router.push({path: '/lose'})
+          this.$router.push({path: '/spilled'})
         }
         if (localStorage.getItem('asset') === '') {
           this.$router.push({path: '/win'})
@@ -154,6 +182,12 @@ export default {
       // Écrans de fin Win || Lose
       if (action.category === 'win') {
         this.$router.push({path: '/win'})
+      }
+      if (action.category === 'loseFlat') {
+        this.$router.push({path: '/lose'})
+      }
+      if (action.category === 'stabbed') {
+        this.$router.push({path: '/stabbed'})
       }
       if (action.category === 'lose') {
         this.$router.push({path: '/lose'});
@@ -200,8 +234,8 @@ export default {
         gameService.time += 2;
         gameService.actualTime -= -2;
       }
-      if (gameService.actualTime >= gameService.maxTime) {
-        this.$router.push({path: '/lose'})
+      if (gameService.time >= gameService.maxTime) {
+        this.$router.push({path: '/late'})
       }
     }
   },
